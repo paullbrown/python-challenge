@@ -40,3 +40,9 @@ print('Greatest Increase in Profits: ' + str(max_change_df))
 print()
 print('Greatest Decrease in Profits: ' +str( min_change_df)) 
 
+# export to file
+output_file = os.path.join('output.csv')
+with open(output_file, 'w') as datafile
+    writer = csv.writer(datafile)
+    writer.writerow(["Total Months", "Total", "Average Change", "Greatest Increase", "Greatest Decrease"])
+    writer.writerows(totalmonths, + sumprofit, + avgchange_df, + max_change_df, + min_change_df)
